@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/app.css") }}">
+</head>
+
+{%block main%}
+<div class="contain">
+    <h2>Demo</h2>
+    <img src="{{url_for('static',filename='sorry-penguin.gif')}}" alt="business goose saying sorry">
+    <p>Coming soon!!</p>
+</div>
+{%endblock%}

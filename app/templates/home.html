@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/app.css") }}">
+</head>
+{%block main%}
+<div class="contain">
+    <h1>Welcome to a Step Towards <strong>Innovisionaries</strong></h1>
+    <div class="containers">
+    <img src="{{url_for('static',filename='mesurely-removebg-preview.png')}}" alt="Digital doodle of a man and a woman talking to each other.">
+    <p>This is a website for advertising the Functionalities, the way our project achieve its 
+       purpose and the contact information of the members of our group project, Innovisionaries'
+       Degree Planner. This degree planner is unique for its usage of AI and the ability to advice
+       students and even calculate gpa.
+    </p>
+    </div>
+</div>
+{%endblock%}

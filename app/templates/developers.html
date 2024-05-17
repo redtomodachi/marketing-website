@@ -1,0 +1,76 @@
+{%extends 'base.html'%}
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename="css/app.css") }}">
+  <script type="text/javascript" src="{{url_for('static', filename='js/balls.js')}}"></script>
+</head>
+
+{%block main%}
+<div class="contain">
+  <h2>Meet the Crew:</h2>
+<div class="slideshow-container">
+    
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="{{url_for('static', filename='mahboymanotheplug.jpg')}}" alt="Our great leader mano" style="width:100%">
+        <div class="container">
+          <h4><b>Kimano Lambert</b></h4>
+          <ul>
+            <li><p>github: https://github.com/manomadethis</p></li>
+            <li><p>Contact Info: lambertkimano@gmail.com </p></li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="{{url_for('static', filename='thisisnot_rash.jpg')}}" alt="Our great member Rasheeda...photo she chose" style="width:100%">
+        <div class="container">
+          <h4><b>Rasheeda Francis</b></h4>
+          <ul>
+            <li><p>Contact Info: Rasheedafrancis02@gmail.com</p></li>
+          </ul>
+        </div>
+      </div>
+  
+
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="{{url_for('static', filename='kareemwantedthisphoto.jpg')}}" alt="Our great member Kareem..the photo he wanted to use" style="width:100%">
+        <div class="container">
+          <h4><b>Kareem Pingue</b></h4>
+          <ul>
+            <li><p>github: https://github.com/KareemPingue</p></li>
+            <li><p>Contact Info: KareemPingue@gmail.com</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="{{url_for('static', filename='surelythisisme.jpg')}}" alt="Our great member Kemar..the photo he wanted to use" style="width:100%">
+        <div class="container">
+          <h4><b>Kemar Wilson</b></h4>
+          <ul>
+            <li><p>github: https://github.com/redtomodachi</p></li>
+            <li><p>Contact Info: sonic3554@gmail.com</p></li>
+          </ul>
+        </div>
+      </div>
+  
+  
+    <!-- Next and previous buttons -->
+  </div>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" ></span>
+    <span class="dot" ></span>
+    <span class="dot" ></span>
+    <span class="dot" ></span>
+  </div>
+  <script type="text/javascript" src="{{url_for('static', filename='js/app.js')}}"></script>
+  {%endblock%}

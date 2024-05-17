@@ -1,0 +1,55 @@
+{%extends 'base.html'%}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/app.css") }}">
+</head>
+
+{%block main%}
+<div class="contain">
+    <h2>How Does It Work</h2>
+    <div class="finally">
+    <div class="cont-item">
+    <img class="img1", src="{{url_for('static',filename='sign.png')}}" alt="">
+        <p> The Degree Planner is a website that allows student of the University of the West Indies to plan their degree path.
+        The user will first be ask to login into our system if they have an account.
+        <p>
+    <div>
+        <div class="cont-item">
+        <img class="img2",  src="{{url_for('static',filename='log.png')}}" alt="">
+
+        <p>other wise they will be able to sign up for an account.</p>
+        </div>
+        <div class="cont-item"></div>
+        <img class="img1",  src="{{url_for('static',filename='data.png')}}" alt="">
+
+        <p>The system works by the using a large database with tables that are all normalized and are connected by relationships.
+        The information in the database are based extensively on the handbooks provided by UWI, also all incorrect information and 
+        missing data from the handbooks were manually added to the database. 
+        The website have different pages for the different reasons a User would like to use our planner. These include but are not
+        limited to: Generation of plan, search, and Gpa calculation.
+        </p>
+        </div>
+
+        <div class="cont-item"></div>
+        <img class="img1",  src="{{url_for('static',filename='searchy.png')}}" alt="">
+
+        <p>the search functionalities allows a user to search for information on a desired category within our systems capabilities.
+        it searches through our systems exstensive database and gives accurate information on the category of search based on the
+        information directly from the handbook, easing the pain of university students whom just want to easily search for 
+        background information on a course they want to do.
+        </p>
+        </div>
+
+        <div class="cont-item"></div>
+        <img class="img2",  src="{{url_for('static',filename='gen.png')}}" alt="">
+        <p>
+        The generation of plan feature works by making the user choose the programmes they want to do,however only valid 
+        combinations will be processed. The user will also enter their prefference and this information will be used to determine/
+        recommend electives to the user in the generation of plans. Finally Gpa calculationis done by getting the letter grades from the
+        user, the system will then use a custom algorithm based on the formula for calculation of gpa done at UWI to determine the 
+        user's Gpa.
+        </p>
+        </div>
+        </div>
+
+</div>
+{%endblock%}

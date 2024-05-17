@@ -1,0 +1,80 @@
+{%extends 'base.html'%}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/app.css") }}">
+</head>
+
+{%block main%}
+<div class="contained">
+    
+    <h1>Functionalities</h1>
+    <div class="functioning">
+    <img src="{{url_for('static',filename='download-removebg-preview.png')}}" alt="penguin">
+    <p>The Degree Planner has many Functionalities to help students to better plan their oath to success in attaining their Degrees.
+        These Functionalities include:
+    </p>
+    </div>
+    <div class="functions">
+        <div class="func">
+        <div class="background"></div>
+        <div class="textpls">
+        <h2><strong>Storage </strong>:</h2>
+        <p>This Degree planner was made to cater to the University of the West Indies.Like most Degree Planner, the system has the 
+            capacity to store: User Data,and degree information such as: Majors,Minors,Faculties,Course information, and  Requirements/Requisites.
+        </p>
+        </div>
+        </div>
+
+        
+        <div class="func">
+        <div class="background2"></div>
+        <div class="textpls">
+        <h2>Search:</h2>
+        <p>The system allows the user to lookup the specific information for a course, major, minor, and programme. This allows the
+            user to research information without generating a plan. 
+        </p>
+        </div>
+        </div>
+
+        <div class="func">
+        <div class="background3"></div>
+        <div class="textpls">
+        <h2>Generate Plan:</h2>
+        <p>The system also allows the user to generate a plan based on the type of programme the user wants to enroll in, or whether the 
+            user wants to do a major,double major, major and minor, or major and double minor.The system also allows for the selection
+            of free electives outside of their based plan.The system will also allow the user to export the plan in any of the 
+            accepted file types The system can allow importing of plans from the same accepted file types.
+        </p>
+        </div>
+        </div>
+
+        
+        <div class="func">
+        <div class="background4"></div>
+        <div class="textpls">
+        <h2>Gpa calculation:</h2>
+        <p>The system will also be able to calculate the Gpa of the user. The system is also able to calculate the minimum number of
+            courses and the minimum grade they would need for said courses to raise their Gpa.    
+        </p>
+        </div>
+        </div>
+
+        
+        <div class="func">
+        <div class="background5"></div>
+        <div class="textpls">
+        <h2>AI:</h2>
+        <p>Our Degree Planner also features an AI with the capabilities of recommending courses based on the user's preference. The AI 
+            can also give users limited background information on the course. The system also features a NER, which i used to identify
+            entities from the user prompts and create a plan based on the identified entities.   
+        </p>
+        </div>
+        </div>
+
+
+    </div>
+
+
+    
+</div>
+{%endblock%}
